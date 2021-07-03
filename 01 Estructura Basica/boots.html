@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Ejemplo de Bootstrap</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Tag de Viewport -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!-- CDN de la librería de Popper  -->
+
   
 <style>
   .bg1 {
     background: cyan;
   }
-
   .bg2 {
     background: yellow;
   }
-
   .bg3 {
     background: pink;
   }
@@ -27,34 +27,77 @@
 <body>
 
   <div class="container-fluid">
-
+<!-- Sistema de Grillas -->
     <div class="row">
-      <div class="col-lg-4 bg1">Párrafo 1</div>
-      <div class="col-lg-4 bg2">Párrafo 2</div>
-      <div class="col-lg-4 bg3">Párrafo 2</div>
+      <div class="col-lg-2 col-sm-4 bg1">Párrafo 1</div>
+      <div class="col-lg-8 col-sm-4 bg2">Párrafo 2</div>
+      <div class="col-lg-2 col-sm-4 bg3">Párrafo 3</div>
     </div>
   </div>
 
+  <h2>Título de ejemplo 
+    <span class="badge badge-secondary"> URGENTE </span> </h2>
+    <h3>Título de ejemplo <span class="badge badge-secondary"> Nuevo </span></h3>
 
   <h1>Título Principal</h1>
-  <div class="container">
+  <div class="container"></div>
    <h2>Formulario Básico</h2>
     <form action="#">
     <div class="form-group">
       <label for="email">Email:</label>
       <input type="email" class="form-control" id="email" placeholder="Ingrese email" name="email">
-      
-      <input type="checkbox" id="rememberpassword" name="recordarcontraseña" value="RecordarContraseña">
-<label for="recordarcontraseña">Recordar Contraseña</label><br>
-
     </div>
+
+    <div class="form-group">
+      <label for="email">Contraseña</label>
+      <input type="password" class="form-control" id="password" placeholder="Escriba su contraseña" name="password">
+    </div>
+
+    <input type="checkbox" id="recordarcontrasena" name="recordarcontrasena" value="recordarcontrasena">
+    <label for="recordarcontraseña">Recordar Contraseña</label><br>
              
     <button type="submit" class="btn btn-default">
                   Ingresar
              </button>
     </form>
-  </div>
+  
 
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicadores -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  
+    <!-- Diapositivas -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/1.jpg" alt="Sistema Solar">
+      </div>
+      <div class="carousel-item">
+        <img src="img/2.jpg" alt="Planeta">
+      </div>
+      <div class="carousel-item">
+        <img src="img/3.jpg" alt="Ingreso a planeta">
+      </div>
+    </div>
+  
+    <!-- Controles de izquierda y derecha -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  
+  </div>
+</div>
+  <!-- Aquí añadimos nuestros scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 </body>
 </html>
